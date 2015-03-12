@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 @import url(http://postachio-static.s3-website-us-east-1.amazonaws.com/fonts/symbolset/ss-pika.css);
 /*---------------------------------------------------
     LESS Elements 0.9.1
@@ -577,7 +578,7 @@ a {
   margin: 0;
 }
 .article-title {
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
   font-weight: 500;
   font-weight: bold;
 }
@@ -585,7 +586,7 @@ a {
   color: #ffffff;
 }
 .article-date {
-  font-family: 'Avenir Next W01 Light';
+  font-family: 'Lato';
   font-weight: 300;
   font-size: 11px;
 }
@@ -679,15 +680,15 @@ body {
   width: 12.5%;
 }
 .light {
-  font-family: 'Avenir Next W01 Light';
+  font-family: 'Lato';
   font-weight: 300;
 }
 .medium {
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
   font-weight: 500;
 }
 .bold {
-  font-family: 'Avenir Next LT W01 Bold';
+  font-family: 'Lato';
   font-weight: 700;
 }
 html {
@@ -706,7 +707,7 @@ h4 {
   color: #f76f4f;
   font-weight: bold;
   padding: 0 0 50px 0;
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
 }
 h1 {
   font-size: 2.5rem;
@@ -726,14 +727,6 @@ a {
 a:hover {
   color: #37cca1;
 }
-/*
-font-family:'Avenir Next W01 Light';
-font-family:'AvenirNextW01-LightItal';
-font-family:'AvenirNextLTW01-Medium';
-font-family:'AvenirNextLTW01-MediumI 721278';
-font-family:'Avenir Next LT W01 Bold';
-font-family:'AvenirNextLTW01-BoldIta';
-*/
 .rainbow {
   position: fixed;
   top: 0;
@@ -805,7 +798,7 @@ font-family:'AvenirNextLTW01-BoldIta';
   width: 140px;
   margin: 0;
   font-size: 1.1rem;
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
   font-weight: 500;
   z-index: 1080;
 }
@@ -852,7 +845,7 @@ font-family:'AvenirNextLTW01-BoldIta';
   padding: 0;
   padding: 25px 50px;
   font-size: 1rem;
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
   font-weight: 500;
 }
 .toc h2 .toggle {
@@ -905,7 +898,7 @@ font-family:'AvenirNextLTW01-BoldIta';
 }
 .toc-items ul li a:hover,
 .toc-items ul li a.active {
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
   font-weight: 500;
 }
 .toc-items ul li a:hover {
@@ -945,7 +938,7 @@ font-family:'AvenirNextLTW01-BoldIta';
 .site-footer ul li:first-of-type {
   text-transform: uppercase;
   padding-bottom: 12.5px;
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
   font-weight: 500;
 }
 .site-footer ul li a {
@@ -1170,7 +1163,7 @@ a.btn.centered {
 .post .post-content blockquote strong,
 .post .post-content p strong,
 .post .post-content div strong {
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
   font-weight: 500;
 }
 .post .post-content p,
@@ -1188,7 +1181,7 @@ a.btn.centered {
 }
 .post .post-content blockquote {
   font-size: 1.4rem;
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
   font-weight: 500;
   border-left: 5px solid #f8f8f8;
   padding: 12.5px 50px;
@@ -1271,7 +1264,7 @@ a.btn.centered {
 }
 .post .post-footer .post-author p span.post-author-name {
   font-size: 1rem;
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
   font-weight: 500;
 }
 .post .post-footer .post-options {
@@ -1334,7 +1327,7 @@ a.btn.centered {
   position: relative;
   padding: 0 0 16.66666667px 0;
   margin: 0;
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
   font-weight: 500;
   color: #f76f4f;
 }
@@ -1395,7 +1388,7 @@ a.btn.centered {
 }
 .posts .post-author p span.post-author-name {
   font-size: 1rem;
-  font-family: 'AvenirNextLTW01-Medium';
+  font-family: 'Lato';
   font-weight: 500;
 }
 .posts .post-options {
