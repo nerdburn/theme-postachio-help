@@ -35,19 +35,21 @@
   </head>
   <body>
     <!-- rainbow stripe -->
-    <div class="rainbow"></div>
+    <div class="gradient-bar"></div>
 
     <!-- header -->
     <header class="site-header">
-      <h1 class="logo"><a href="{{ site.base_url }}"><span>{{ site.name }}</span></a></h1>
+      <h1 class="logo"><a href="{{ site.base_url }}"><span class="icon">logo</span><span class="text">postach.io</span></a></h1>
       <form class="search">
         <label>
           Help Center
           <span class="ss-icon">search</span>
         </label>
+        <!--
         <div class="search-input">
           <input type="text" placeholder="Search help center" data-typeahead />
         </div>
+        -->
       </form>
     </header>
 
@@ -86,9 +88,11 @@
         <h1>Getting Started</h1>
         <div class="post-content">
           <p>Thanks for visiting the Postach.io Help Center. If you're new to Postach.io, we recommend you watch this intro video and then read the FAQ below.</p>
+          <!--
           <div class="post-video">
             <iframe src="//player.vimeo.com/video/63611746" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
+          -->
           <h3>FAQ</h3>
           <p>
             <strong>How do I create a post?</strong><br />
@@ -219,6 +223,7 @@
     {{ footer_meta }}
 
     <!-- js -->
+    <script type="text/javascript" src="http://postachio-static.s3-website-us-east-1.amazonaws.com/fonts/icomoon/liga.js"></script>
     <script type="text/javascript" src="{{ assets('js/help.min.js') }}"></script>
 
   </body>

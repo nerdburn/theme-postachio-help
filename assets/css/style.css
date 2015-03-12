@@ -727,21 +727,16 @@ a {
 a:hover {
   color: #37cca1;
 }
-.rainbow {
+.gradient-bar {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 4px;
-  background-image: url(../images/rainbow-bg.png);
-  background-repeat: repeat-x;
-  background-size: 55%;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 1000;
+  height: 2px;
+  background-image: -webkit-linear-gradient(180deg, #37cca2 0%, #46deb6 17%, #feed00 38%, #fbf27a 59%, #f24141 79%, #ffafaf 100%);
+  background-image: -moz-linear-gradient(right, #37cca2 0%, #46deb6 17%, #feed00 38%, #fbf27a 59%, #f24141 79%, #ffafaf 100%);
+  background-image: -o-linear-gradient(right, #37cca2 0%, #46deb6 17%, #feed00 38%, #fbf27a 59%, #f24141 79%, #ffafaf 100%);
+  background-image: linear-gradient(to left, #37cca2 0%, #46deb6 17%, #feed00 38%, #fbf27a 59%, #f24141 79%, #ffafaf 100%);
+  z-index: 10001;
 }
 .site-header {
   background-color: #f8f8f8;
@@ -761,28 +756,24 @@ a:hover {
   display: table;
   clear: both;
 }
-.logo {
+h1.logo {
+  display: inline-block;
   float: left;
+  position: relative;
   padding: 0;
   margin: 0;
-  width: 217px;
-  height: 46px;
+  font-size: 1.35rem;
+  line-height: 1.35rem;
 }
-.logo a {
-  display: block;
-  width: 211px;
-  height: 47px;
-  background: url('../images/logo.png') no-repeat top left;
-  background-size: 100%;
-  overflow: hidden;
+h1.logo a .icon {
+  position: relative;
+  top: 4px;
+  color: #37cca1;
+  padding-right: 5px;
 }
-.logo a span {
-  -moz-opacity: 0;
-  -khtml-opacity: 0;
-  -webkit-opacity: 0;
-  opacity: 0;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-  filter: alpha(opacity=0);
+h1.logo a .text {
+  font-weight: 300;
+  color: #8b8b8b;
 }
 .search {
   position: relative;
