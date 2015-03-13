@@ -692,6 +692,9 @@ body {
   font-family: 'Lato';
   font-weight: 500;
 }
+strong {
+  font-weight: 400;
+}
 html {
   font-size: 100%;
 }
@@ -1170,8 +1173,7 @@ a.btn.centered {
 .post .post-content blockquote strong,
 .post .post-content p strong,
 .post .post-content div strong {
-  font-family: 'Lato';
-  font-weight: 300;
+  font-weight: 400;
 }
 .post .post-content p,
 .post .post-content div {
