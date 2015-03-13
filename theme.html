@@ -8,30 +8,6 @@
 
     <!-- css -->
     <link rel="stylesheet"  href="{{ assets('css/style.css') }}">
-
-    <!-- fonts.com asynchronous -->
-    <script>
-    (function(d, t) {
-      var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-      g.src = '//fast.fonts.net/jsapi/33453319-536f-4e2f-9943-ed99e75a8297.js';
-      s.parentNode.insertBefore(g, s);
-    }(document, 'script'));
-    </script>
-
-    {% if site.analytics %}
-    <!-- universal analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', '{{ site.analytics }}', 'postach.io');
-      ga('send', 'pageview');
-
-    </script>        
-    {% endif %}
   </head>
   <body>
     <!-- rainbow stripe -->
@@ -40,17 +16,17 @@
     <!-- header -->
     <header class="site-header">
       <h1 class="logo"><a href="{{ site.base_url }}"><span class="icon">logo</span><span class="text">postach.io</span></a></h1>
+      <!--
       <form class="search">
         <label>
           Help Center
           <span class="ss-icon">search</span>
         </label>
-        <!--
         <div class="search-input">
           <input type="text" placeholder="Search help center" data-typeahead />
         </div>
-        -->
       </form>
+      -->
     </header>
 
     <!-- table of contents -->
