@@ -1,9 +1,17 @@
-<!-- version 1.0 -->
+<!-- version 1.1 -->
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
     <title>{% if post %}{{ post.title }}{% else %}Help Center{% endif %} | Postach.io</title>
+    <title>
+      {% if is_login %}Login
+      {% elif is_home %}Postach.io Help Center
+      {% elif is_tag %}{{ tag|format_tag(False, True) }}
+      {% elif post %}{{ post.title }}
+      {% endif %}
+      | Postach.io Help Center
+    </title>
 
     {{ header_meta }}
 
@@ -183,9 +191,7 @@
         </ul>
         <ul>
           <li class="nav-title">Community</li>
-          <!-- <li><a href="http://postach.io/discover">Discover</a></li> -->
           <li><a href="http://help.postach.io">Help Center</a></li>
-          <!-- <li><a href="http://docs.postach.io">Theme Docs</a></li> -->
         </ul>
         <div class="right">
           <p class="copy">&copy; 2014 <a href="http://inputlogic.ca">Input</a></p>
