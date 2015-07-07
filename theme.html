@@ -1,12 +1,11 @@
-<!-- version 1.1 -->
+<!-- version 1.2 -->
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
-    <title>{% if post %}{{ post.title }}{% else %}Help Center{% endif %} | Postach.io</title>
     <title>
       {% if is_login %}Login
-      {% elif is_home %}Postach.io Help Center
+      {% elif is_home %}Getting Started
       {% elif is_tag %}{{ tag|format_tag(False, True) }}
       {% elif post %}{{ post.title }}
       {% endif %}
