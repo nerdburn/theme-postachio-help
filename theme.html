@@ -1,4 +1,4 @@
-<!-- version 1.2 -->
+<!-- version 1.4 -->
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
   <head>
@@ -76,15 +76,18 @@
           <h3>FAQ</h3>
           <p>
             <strong>How do I create a post?</strong><br />
-            Simply open up Evernote on your desktop or mobile, create a note in your Postach.io notebook, tag it "published", and then sync Evernote. To learn more about creating posts, check out the <a href="{{ site.base_url }}/tag/creating-posts">Creating Posts</a> section.
+            To create a post, open Evernote and create a note in the notebook you connected with signup up for Postach.io. When you're happy with your note, tag it with "published" and sync Evernote.
+            To learn more about creating posts, check out the <a href="{{ site.base_url }}/tag/creating-posts">Creating Posts</a> section.
           </p>
           <p>
             <strong>How do I add comments to my blog?</strong><br />
-            We don't support native comments, but you can easily install Disqus comments on any of our themes.
+            We use the fantastic <a href="http://disqus.com" target="_blank">Disqus</a> commenting tool.
+            <a href="/post/disqus-comments">Learn how to setup Disqus Comments</a>.
           </p>
           <p>
             <strong>How do I change my portrait photo?</strong><br />
-            To upload a custom profile photo, create a note in your sites notebook and add the image you'd like to use. Tag the note with "avatar" and sync Evernote. That's it! Pro-tip: square images work best. For more info, check out the <a href="{{ site.base_url }}/how-to-change-your-avatar">How to Change Your Avatar</a> page.
+            You can change the avatar on your site by logging into your Postach.io account and uploading a new photo.
+            <a href="/post/how-to-change-your-avatar">Learn more about changing your avatar.</a>
           </p>
         </div>
 
@@ -111,7 +114,7 @@
           {% for post in posts %}
           <li>
             <h3><a href="{{ post.permalink }}">{{ post.title }}</a> <!-- <a href="#" class="like">2 <span class="ss-icon">heart</span></a> --></h3>
-            <p>{{ post.content }}</p>
+            <p>{{ post.content }} <a href="{{post.permalink}}">read more</a></p>
             <!-- <div class="post-author">
               <a href="#" class="post-author-avatar"><img src="http://www.gravatar.com/avatar/f2c53ba0eb2f52d89b414951922b0606.png" /></a>
               <p>
